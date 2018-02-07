@@ -1,0 +1,81 @@
+// @font-face {
+//   font-family: VolvoBroadProDigital;
+//   src: url("../../fonts/VolvoBroadProDigital/VolvoBroadProDigital-webfont.woff"); }
+
+//Example use of media queries
+
+@import "mixins-variables";
+@import "media-mixins";
+@import "nav";
+@import "hero";
+@import "footer";
+@import "portifolio";
+@import "whyus";
+@import "map";
+@import "contact";
+@import "unlisted-shares";
+@import "company";
+
+body {
+    font-family: "Muli", Helvetica, Arial, sans-serif;    
+    font-weight: normal;
+    font-size: 14px;
+    position: relative;
+}
+
+
+
+
+img {
+    max-width: 100%;
+}
+
+.mainWrapper {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.btn-default {
+    background-color: #515769;
+    color: $whiteColor;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 2px;
+
+    
+
+    &:hover {
+        background-color: $orangeColor;
+        color: $whiteColor;
+
+        &:after {
+            right: 30px;
+            transition: right 0.2s;
+        }
+    }
+}
+
+.btn-red {
+    background-color: $btnRed;
+
+    @include vendor-prefixes(transition, all 0.3s ease-in);
+
+    &:after {
+        background-position: -38px -22px;
+        width: 9px;
+        height: 13px;
+    }
+
+    &:hover {
+        background-color: #bc0c03;
+        span.fa {
+            color: $blackColor;
+        }
+    }
+}
+
+.breadcrumb {
+    margin-top: 15px;
+}
+

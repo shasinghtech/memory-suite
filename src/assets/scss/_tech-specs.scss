@@ -1,0 +1,135 @@
+.specification-container {
+	margin: 40px 0;
+	@include respond-to($sm) {
+		margin: 100px 0;
+	}
+}
+
+.specs-head {
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 70px;
+	@include respond-to(600px, max) {
+		margin-bottom: 20px;
+	}
+	h4 {
+		font-family: $dinBoldItalic;
+		font-size: 32px;
+		color: $whiteColor;
+		margin-bottom: 30px;
+		@include respond-to(600px, max) {
+			font-size: 22px;
+			margin-bottom: 15px;
+		}
+	}
+
+	h1 {
+		font-family: $dinBoldItalic;
+		font-size: 55px;
+		color: $yellowColor;
+		@include respond-to(600px, max) {
+			font-size: 30px;
+		}
+	}
+}
+
+.specs-accodion {
+	.panel-group .panel {
+		border-radius: 0;
+		background-color: #1e1d1d;
+		color: #909090;
+		font-family: $roboto;
+		font-size: 18px;
+		line-height: 1.3;
+		+.panel {
+		    margin-top: 0;
+		}
+	}
+
+	.panel-body {
+		background: #1e1d1d url("../img/engine.jpg") bottom right no-repeat;
+	}
+
+	.panel-default {
+		border: none;
+		border-bottom: 1px solid #3c3b3b;
+
+		> .panel-heading {
+			background-color: #151414;
+			color: $whiteColor;
+			border-radius: 0;
+			padding: 0;
+
+			+ .panel-collapse > .panel-body {
+				border-top-color: transparent;
+			}
+		}
+
+	}
+
+	.panel-title {
+		font-family: $dinMedium;
+		font-size: 20px;
+		text-transform: uppercase;
+
+		> a {
+			display: block;
+			background-color: #1e1d1d;
+			padding: 15px;
+			@include respond-to($sm) {
+				padding: 30px 45px;
+			}
+
+			&.collapsed {
+				background-color: #151414;
+				&:before {
+				    float: right !important;
+				    content:"\f067";
+				    color: #aaaaaa;
+				}
+			}
+
+			&:before {
+			    float: right !important;
+			    font-family: FontAwesome;
+			    content:"\f068";
+			    padding-right: 5px;
+			    color: #aaaaaa;
+			}
+
+			&:hover, &:active, &:focus {
+				text-decoration:none;
+			}
+		}
+	}
+}
+
+.specs-row {
+	display: table;
+	width: 100%;
+	@include respond-to(600px, max) {
+		margin-bottom: 30px;
+	}
+
+	.specs-cell {
+		display: block;
+		padding: 2px;
+		@include respond-to(600px) {
+			display: table-cell;
+			padding: 15px;
+		}
+
+		&:first-child {
+			@include respond-to(600px) {
+				border-right: 1px solid #3c3b3b;
+				width: 185px;
+			}
+		}
+
+		&:last-child {
+			@include respond-to(600px) {
+				padding-left: 45px;
+			}
+		}
+	}
+}

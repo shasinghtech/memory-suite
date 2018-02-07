@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>
+        {{#if title}} {{title}} {{else}} Batai Capital {{/if}}
+    </title>
+    {{> styles}}
+</head>
+
+<body class="top-fixed">
+    <div>
+        {{> nav }}
+        <div class="container">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="active">Contact Us</li>
+            </ol>
+            <div class="contact-wrapper">
+              <div class="row">
+                  <div class="col-xs-12 col-sm-4">
+                      <div class="bc-form">
+                          <h3>Contact Details</h3>                        
+                          <p class="icon location">
+                              <strong>Batai Capital</strong>
+                              <br> Plot no 21, Hiranyakeshi MIDC,1905 Sankeshwar road, Gandinglaj, kolhapur: 416502
+                          </p>
+                          <p class="icon email">
+                              <a href="mailto:enquiry@batai-capital.com">enquiry@batai-capital.com</a>
+                          </p>
+                          <p class="icon call">
+                              02528-1220723
+                          </p>
+                          <p class="icon fax">
+                              02528-1220723
+                          </p>
+                          <p class="icon mobile">
+                              +91 9822283370
+                          </p>
+                          <p class="icon">
+                              Mon - Sat: 09.00 to 18.00
+                              <br> Sunday: Close
+                          </p>
+                      </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-7 col-sm-offset-1">
+                      <div class="bc-form">
+                          <h3>Send Message Us</h3>
+                          <p>I would like to discuss</p>
+                          <form>
+                              <div class="row">
+                                  <div class="col-xs-12 col-sm-6">
+                                      <div class="form-group">
+                                          <label class="sr-only" for="enType">Regarding Sales</label>
+                                          <select name="" id="enType" class="form-control" required="required">
+                                              <option value="1">Regarding Sales</option>
+                                              <option value="2">Product Enquiry</option>
+                                              <option value="3">Quotation</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                                  <div class="col-xs-12 col-sm-6">
+                                      <div class="form-group">
+                                          <label class="sr-only" for="userName">Name</label>
+                                          <input type="text" class="form-control" id="userName" required="required" placeholder="Name">
+                                      </div>
+                                  </div>
+                                  <div class="col-xs-12 col-sm-6">
+                                      <div class="form-group">
+                                          <label class="sr-only" for="email">Email ID</label>
+                                          <input type="email" class="form-control" id="email" required="required" placeholder="Email ID">
+                                      </div>
+                                  </div>
+                                  <div class="col-xs-12 col-sm-6">
+                                      <div class="form-group">
+                                          <label class="sr-only" for="mobile">Moblie Number</label>
+                                          <input type="text" class="form-control" id="mobile" required="required" placeholder="Moblie Number">
+                                      </div>
+                                  </div>
+                                  <div class="col-xs-12 col-sm-12">
+                                      <div class="form-group">
+                                          <label class="sr-only" for="message">Message</label>
+                                          <textarea id="message" cols="10" rows="7" class="form-control" required="required" placeholder="Enter message here"></textarea>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="text-center">
+                                  <button type="submit" class="btn btn-default">Submit</button>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+        {{> map }} {{> footer }} {{> scripts }}
+    </div>
+</body>
+
+</html>

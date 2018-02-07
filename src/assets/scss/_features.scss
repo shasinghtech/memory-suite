@@ -1,0 +1,361 @@
+.featuresWrap {
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+
+	.tab-content {
+		float: left;
+		width: 100%;
+		margin-left: -150px;
+		@include breakpoint(xs) {
+			float: none;
+			margin-left: 0;
+		}
+	}
+
+	.slider {
+		width: 400px;
+		margin: 0 auto;
+		position: absolute;
+		z-index: 1;
+		right: 10%;
+		top: 10%;  
+		@include breakpoint(xs) {
+			position: relative;
+			left: 0;
+			top: 25px;
+			right: auto;
+			width: 90%;
+		}
+	}
+
+	.tab-performance {
+		.title-xs {
+			// padding-left: 46px;
+		}
+	}
+
+	.tab-technology {
+		.title-xs {
+			// padding-left: 46px;
+		}
+	}
+
+	.tab-comfort {
+		.title-xs {
+			// padding-left: 36px;
+		}
+	}
+
+	.tab-convnience {
+		.title-xs {
+			// padding-left: 40px;
+		}
+	}
+
+	.nav.nav-tabs {
+		width: 140px;
+		float: left;
+		position: relative;
+		z-index: 1;
+		left: 5%;
+		top: 60px; 
+		background-color: transparent;
+		@include breakpoint(xs) {
+			display: none;
+		}
+	}
+
+	.feature-hero {
+		position: relative;
+		display: block;
+		@include breakpoint(xs) {
+			position: absolute;
+			bottom: 0;
+		}
+	}
+
+	.slick-slider .slick-slide {
+		padding: 10px 0;
+		display: flex;
+		justify-content: left;
+		align-items: left; 
+	}
+
+	h2 {
+		font-size: 32px;
+		line-height: 40px;
+		color: $yellowColor;
+		font-family: $dinBoldItalic;
+		text-transform: uppercase;
+		@include breakpoint(xs) {
+			font-size: 30px;
+			line-height: 34px;
+		}
+	}
+
+	p {
+		font-size: 18px;
+		color: #afadad;  
+		line-height: 30px;
+		font-family: $dinNormal;
+		display: none;  
+		@include breakpoint(xs) {
+			font-size: 16px;
+			line-height: 22px;
+		}
+	}
+
+	.slick-next,
+	.slick-prev {
+		height: 32px;
+		width: 32px;
+		border: solid 1px #b7b7b7;
+		border-radius: 2px;
+		bottom: -60px;
+		top: auto;
+	}
+
+	.slick-prev {
+		left: 5px;
+		right: initial;
+	}
+
+	.slick-next {
+		left: 50px;
+		right: initial;
+	}
+
+	.tab-content > .tab-pane {
+		@include breakpoint(xs) {
+			display: block;
+			opacity: 1;
+			min-height: 520px;
+			position: relative;
+		}
+	}
+}
+
+.tabs .featuresWrap {
+	.nav-tabs > li {
+		display: block;
+		float: none;
+		margin: 0;
+		// margin-bottom: 15px;
+
+		&.active {
+			a {
+				color: $yellowColor;
+				border: 1px solid $yellowColor;
+				border-left: none;
+
+				.style-icon {
+					background-position: -102px 10px;
+				}
+
+				.performance-icon {
+					background-position: -102px -96px;
+				}
+
+				.technology-icon {
+					background-position: -102px -195px;
+				}
+
+				.comfort-icon {
+					background-position: -102px -303px;
+				}
+
+				.convenience-icon {
+					background-position: -102px -404px;
+				}
+
+				&:after {
+					width: 100%;
+					background-color: $yellowColor;
+					transition: all 0.4s;
+				}
+				&:before {
+					width: 100%;
+					background-color: $yellowColor;
+					transition: all 0.4s;
+				}
+			}
+		}
+		&:last-child{
+			a{
+				border-bottom: #343232 solid 1px;
+			}
+		}
+		a {
+			color: #838383;
+			padding: 0;
+			// border-bottom: none;
+			background-color: transparent;
+			text-align: right;
+			font-size: 14px;
+			transition: all 0.4s;
+			height: 90px;
+			vertical-align: bottom;
+			padding-top: 35px;  
+			position: relative;
+			border: #343232 solid 1px;
+			padding-right: 12px;
+			border-left: none;
+			border-bottom: none;
+			border-radius: 0;
+
+			span {
+				display: none;
+				background: url("../img/icon-features.png") no-repeat 0 0;
+				height: 45px;
+				width: 45px;
+				position: absolute;
+				right: 0;
+				top: 0;
+				transition: all 0.4s;
+				margin-right: 12px;
+
+				&.style-icon {
+					background-position: 0 10px;
+				}
+
+				&.performance-icon {
+					background-position: 0 -96px;
+				}
+
+				&.technology-icon {
+					background-position: 0 -195px;
+				}
+
+				&.comfort-icon {
+					background-position: 0 -303px;
+				}
+
+				&.convenience-icon {
+					background-position: 0 -404px;
+				}
+			}
+
+			// &:after {
+			// 	content: '';
+			// 	position: absolute;
+			// 	width: 0;
+			// 	bottom: 0;
+			// 	left: 0;
+			// 	height: 1px;
+			// 	background-color: #838383;
+			// 	transition: all 0.4s;
+			// }
+			// &:before {
+			// 	content: '';
+			// 	position: absolute;
+			// 	width: 0;
+			// 	top: 0;
+			// 	left: 0;
+			// 	height: 1px;
+			// 	background-color: #838383;
+			// 	transition: all 0.4s;
+			// }
+
+			&:hover {
+				color: $yellowColor;
+				border: $yellowColor solid 1px;
+				border-left: none;
+				transition: all 0.4s;
+
+				.style-icon {
+					background-position: -102px 10px;
+				}
+
+				.performance-icon {
+					background-position: -102px -96px;
+				}
+
+				.technology-icon {
+					background-position: -102px -195px;
+				}
+
+				.comfort-icon {
+					background-position: -102px -303px;
+				}
+
+				.convenience-icon {
+					background-position: -102px -404px;
+				}
+
+				&:after {
+					width: 100%;
+					background-color: $yellowColor;
+					transition: all 0.4s;
+				}
+				&:before {
+					width: 100%;
+					background-color: $yellowColor;
+					transition: all 0.4s;
+				}
+			}
+		}
+	}
+}
+
+.slick-next:before {
+	content: '';
+	background: url("../img/sprite.png") no-repeat right -539px;
+	height: 17px;
+	width: 12px;
+	position: absolute;
+	left: 10px;
+	top: 8px;
+}
+
+.slick-prev:before {
+	content: '';
+	background: url("../img/sprite.png") no-repeat left -464px;
+	height: 17px;
+	width: 12px;
+	position: absolute;
+	left: 10px;
+	top: 8px;
+}
+
+.title-xs {
+	font-size: 14px;
+	color: #838383;
+	font-family: $dinMedium;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding: 24px 0 0 0px;
+	position: relative;
+	width: 90%;
+	margin: 30px auto 0;
+
+	span {
+		display: none;
+		background: url("../img/icon-features.png") no-repeat 0 10px;
+		position: absolute;
+		height: 45px;
+		width: 45px;
+		left: 0;
+		top: 0;
+
+		&.style-icon {
+			background-position: 0 10px;
+		}
+
+		&.performance-icon {
+			background-position: -12px -94px;
+		}
+
+		&.technology-icon {
+			background-position: -12px -195px;
+		}
+
+		&.comfort-icon {
+			background-position: -24px -303px;
+		}
+
+		&.convenience-icon {
+			background-position: -20px -404px;
+		}
+	}
+}

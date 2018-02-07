@@ -1,0 +1,107 @@
+.navbar {
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+}
+
+.home .navbar-default {
+    background: transparent;
+}
+
+
+.navbar-default {    
+    border-bottom: none;
+    background: $orangeColor;
+    .navbar-nav > li > a {
+        color: #000;
+    }
+}
+
+
+.home .dark-header {
+    background: $orangeColor;
+    color: #000;
+    .navbar-nav > li > a {
+        color: #fff;
+    }
+}
+
+.navbar-nav > li > a {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font-family: "Muli", Helvetica, Arial, sans-serif;    
+    font-weight: normal;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.dropdown-menu > li.sub-nav > a {
+    margin-left: 15px !important;
+    color: #666;
+}
+
+.nav-right {
+    margin-left: 220px;
+}
+
+.navbar-brand {
+    background: url(../img/bati_logo.png) no-repeat;
+    background-size: contain;
+    width: 97px;
+    height: 90px;
+    margin: 0;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    background-color: #373286;
+    color: #fff;
+}
+
+@media (min-width: 320px) and (max-width: 736px) {
+    .navbar-nav > li > a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .navbar-brand {
+        width: 129px;
+        height: 50px;
+        margin: 10px;
+    }
+
+    .navbar-nav > li > a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .nav-right {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+
+    .caret-down {
+        width: 14px;
+        display: inline-block;
+        margin-left: 5px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .nav > li > a {
+        font-size: 14px;
+    }
+
+    .nav-right {
+        margin-left: 0;
+        float: right;
+    }
+
+    .cart {
+        display: none;
+    }
+}
+
+.top-fixed {
+    margin-top: 90px;
+}

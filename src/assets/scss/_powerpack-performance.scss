@@ -1,0 +1,145 @@
+.powerpack-performance {
+    background: #151414 url("../img/power-5.jpg") 0 0 no-repeat;
+    padding-top: 155px;
+
+    @include respond-to(480px, max) {
+        background-image: url("../img/power-5-mobile.jpg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        padding-top: 130px;
+    }
+
+
+    h1 {
+        font-family: $dinBoldItalic;
+        font-size: 100px;
+        line-height: 95px;
+        letter-spacing: 6px;
+        color: $yellowColor;
+        text-transform: uppercase;
+        margin-left: 65px;
+        margin-bottom: 160px;
+
+        span {
+            color: $whiteColor;
+        }
+
+        @include respond-to(600px, max) {
+            font-size: 40px;
+            line-height: 42px;
+            letter-spacing: 0;
+            margin-left: 0;
+            margin-bottom: 114px;
+        }
+
+
+        @include respond-to(481px, 1023px) {
+            font-size: 70px;
+            line-height: 1.5;
+        }
+    }
+
+    .row {
+        @include respond-to($xs, max) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}
+
+.nopadding {
+    padding: 0 !important;
+}
+
+.performance {
+    background-color: #0f0f10;
+    color: $whiteColor;
+    padding: 50px;
+    border: 3px solid #0f0f10;
+
+    @include vendor-prefixes(transition, all 0.3s ease-in);
+
+    @include respond-to($xs, max) {
+        padding: 30px;
+    }
+
+
+    @include respond-to($xs, 1023px) {
+        padding: 20px;
+    }
+
+
+    &:hover {
+        border: 3px solid $yellowColor;
+
+        h2, .table {
+            color: $yellowColor;
+        }
+    }
+
+    h5 {
+        font-family: $dinMedium;
+        font-size: 13px;
+        color: $yellowColor;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        font-family: $dinNormal;
+        font-size: 100px;
+        color: $whiteColor;
+        letter-spacing: -7.5px;
+
+        @include respond-to($xs, max) {
+            font-size: 80px;
+        }
+
+
+        span {
+            font-size: 18px;
+            letter-spacing: normal;
+        }
+
+        @include respond-to($xs, 1024px) {
+            font-size: 70px;
+            line-height: 70px;
+        }
+    }
+
+    .table {
+        display: table;
+        width: 100%;
+        font-family: $dinNormal;
+        margin-bottom: 0;
+
+        .table-cell {
+            display: table-cell;
+            vertical-align: top;
+            font-size: 18px;
+            line-height: 25px;
+
+            @include respond-to($xs, 1024px) {
+                font-size: 15px;
+                line-height: 1.4;
+            }
+
+
+            &:nth-child(odd) {
+                width: 75px;
+                font-size: 100px;
+                line-height: 100px;
+
+                @include respond-to($xs, 1024px) {
+                    font-size: 70px;
+                    line-height: 70px;
+                }
+            }
+        }
+    }
+}
+
+.power-btn {
+    text-align: center;
+    margin: 50px 0;
+}

@@ -1,0 +1,69 @@
+.test-drive-container {
+    background: url(../img/tvs-racing-bg.jpg) no-repeat center top;
+    padding: 40px 0 226px;
+    @include respond-to($sm) {
+    	padding-top: 100px;
+    }
+}
+
+.test-drive-form {
+	color: $whiteColor;
+
+	.form-control {
+		color: $blackColor;
+		font-family: $dinBold;
+	}
+
+	h1 {
+		font-size: 22px;
+	    font-family: $dinBold;
+	    color: $yellowColor;
+	    margin-bottom: 20px;
+	    text-transform: uppercase;
+	}
+
+	.checkbox-inline input[type=checkbox], .checkbox input[type=checkbox] {
+		margin-top: -1px;
+	}
+
+	.has-success .checkbox-inline, .has-error .checkbox-inline {
+		color: $whiteColor;
+	}
+
+	.btn-default[disabled]:hover {
+		background-color: #da0011; 
+		color: $whiteColor;
+	}
+
+	.checkbox-inline .has-error .form-control-feedback {
+		display: none !important;
+	}
+
+	.checkbox-inline {
+		position: initial;
+	}
+
+	.has-feedback .form-control-feedback {
+		right: 0;
+	}
+
+	.has-error .control-label, .has-success .control-label {
+		color: $whiteColor;
+	}
+
+	.has-error .checkbox, .has-error .help-block, .has-error .radio, .has-error .radio-inline, .has-error.checkbox label, .has-error.checkbox-inline label, .has-error.radio label, .has-error.radio-inline label {
+		color: #ff4a58;
+	}
+
+	.terms-label {
+		label {
+			padding-right: 12px;
+			.form-control-feedback {
+				right: -13px;
+				top: -4px;
+			}
+		}
+	}
+}
+
+#success_message{ display: none;}

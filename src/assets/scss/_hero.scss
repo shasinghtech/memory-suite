@@ -1,0 +1,19 @@
+.well {
+	background-color: $orangeColor;
+	color: $whiteColor;
+	margin-bottom: 0;
+	h1 {
+		font-family: "Muli", Helvetica, Arial, sans-serif;
+		font-weight: 300;		
+		font-size: 20px;
+		line-height: 1.5;
+		text-align: center;
+		text-transform: capitalize;
+		margin: 25px 0;
+	}
+}
+
+.hero {
+	display: block;
+	margin-bottom: -5px;
+}

@@ -1,0 +1,55 @@
+.blog-container{
+  padding: 30px 0 140px;
+  background: #151414;
+  @include breakpoint(xs) {
+    padding: 50px 0 25px;
+  }
+
+  .tvs-blog{
+    margin: 0 auto;
+    @include breakpoint(xs) {
+      margin: 0 auto 60px;
+      max-width: 380px;
+    }
+    >a{
+      display: block;
+      @include breakpoint(xs) {
+        text-align: center;
+      }
+      img{
+        border-radius: 2px;
+        margin: 0 0 40px 0;
+        @include breakpoint(xs) {
+          margin: 0 0 20px 0;
+        }
+      }
+    }
+    .blog-content{
+      font-family: $dinMedium;
+      span{
+        color: $yellowColor;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin: 0 0 20px 0;
+        display: block;
+        @include breakpoint(xs) {
+          font-size: 12px;
+          margin: 0 0 15px 0;
+        }
+      }
+      p{
+        a{
+          font-size: 20px;
+          line-height: 22px;
+          color: #fff;
+          @include breakpoint(xs) {
+            font-size: 18px;
+          }
+          &:hover{
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

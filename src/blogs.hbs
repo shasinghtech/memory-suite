@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>
+        {{#if title}} {{title}} {{else}} Batai Capital {{/if}}
+    </title>
+    {{> styles}}
+</head>
+
+<body class="top-fixed">
+    <div>
+        {{> nav }}
+        <div class="container">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="active">Blogs</li>
+            </ol>
+            <div class="blogs-wrapper">
+              
+    <div class="row">
+        <div class="col-sm-4">
+            <h2><a href="#">Harmonious Planning</a></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna ut consequat siad esqudiat dolor</p>
+            <a href="#"><img class="img-responsive" src="assets/img/01.jpg" alt="Portfolio Image"></a>
+        </div>
+        <div class="col-sm-4">
+            <h2><a href="#">Easy Integration</a></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna ut consequat siad esqudiat dolor</p>
+            <a href="#"><img class="img-responsive" src="assets/img/02.jpg" alt="Portfolio Image"></a>
+        </div>
+        <div class="col-sm-4">
+            <h2><a href="#">Superior Support</a></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna ut consequat siad esqudiat dolor</p>
+            <a href="#"><img class="img-responsive" src="assets/img/03.jpg" alt="Portfolio Image"></a>
+        </div>
+    </div>
+
+
+            </div>
+        </div>
+        {{> map }} {{> footer }} {{> scripts }}
+    </div>
+</body>
+
+</html>

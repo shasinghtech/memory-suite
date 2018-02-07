@@ -1,0 +1,398 @@
+.colorizer {
+    background: #121212 url("../img/color-change-bg.jpg") top center no-repeat;
+    min-height: 870px;
+    padding: 80px 0 125px;
+
+    @include respond-to(480px, max) {
+        background: #121212 url("../img/color-change-bg.jpg") center no-repeat;
+        min-height: inherit;
+    }
+}
+
+.scooter-wrapper {
+    h1 {
+        color: $whiteColor;
+        font-size: 32px;
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+
+.tabs {
+    .scooter-tabs {
+        &.nav-tabs {
+            text-align: center;
+            border-bottom: none;
+            background-color: transparent;
+            display: block;
+            width: 100%;
+
+            > li {
+                float: none;
+                display: inline-block;
+                zoom: 1;
+                position: relative;
+
+                > a {
+                    border-radius: 0;
+                    color: $whiteColor;
+                    border: none;
+                    padding: 26px 20px;
+                    font-size: 14px;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        background-color: transparent;
+                    }
+
+                    @include respond-to(480px, max) {
+                        padding: 8px;
+                        font-size: 12px;
+                        letter-spacing: 0;
+                    }
+                }
+
+                &.active > a, &.active > a:focus, &.active > a:hover {
+                    color: $whiteColor;
+                    background-color: $bloodRed;
+                    cursor: default;
+                    border: none;
+                    bottom: 0;
+                    min-width: 100px;
+                }
+            }
+        }
+    }
+}
+
+.tabs {
+    .color-varient {
+        .nav-tabs {
+            text-align: center;
+            border-bottom: none;
+            background-color: transparent;
+            height: 60px;  
+            @include breakpoint(xs) {
+                width: 100%;              
+                display: block;  
+            }
+
+            > li {
+                //float: none;
+                display: inline-block;
+                zoom: 1;
+                width: 116px;
+                position: relative;
+
+                @include breakpoint(xs) { 
+                    width: 18%; 
+                }
+
+
+                > a {
+                    border-radius: 0;
+                    color: $whiteColor;
+                    border: none;
+                    margin-right: -10px;
+                    line-height: 0;
+                    position: relative;
+                    bottom: -25px;
+                    height: 20px;
+                    text-indent: -9999px;
+                    padding: 0;
+                    z-index: 1;
+
+                    @include vendor-prefixes(transition, height 0.1s ease-in);
+
+                    @include vendor-prefixes(transform, skew(-25deg) rotatex(180deg));
+
+                    @include vendor-prefixes(transform-origin, top);
+
+                    &.yellow-tab {
+                        background: #f5b40c;
+
+                        /* Old browsers */
+                        background: -moz-linear-gradient(top, #fcee71 1%, #f5b40c 100%);
+
+                        /* FF3.6-15 */
+                        background: -webkit-linear-gradient(top, #fcee71 1%, #f5b40c 100%);
+
+                        /* Chrome10-25,Safari5.1-6 */
+                        background: linear-gradient(to bottom, #fcee71 1%, #f5b40c 100%);
+
+                        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcee71', endColorstr='#f5b40c',GradientType=0 );
+
+                        /* IE6-9 */
+                    }
+
+                    &.black-tab {
+                        background: #000;
+
+                        /* Old browsers */
+                        background: -moz-linear-gradient(top, #45484d 0%, #000000 100%);
+
+                        /* FF3.6-15 */
+                        background: -webkit-linear-gradient(top, #45484d 0%, #000000 100%);
+
+                        /* Chrome10-25,Safari5.1-6 */
+                        background: linear-gradient(to bottom, #45484d 0%, #000000 100%);
+
+                        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 );
+
+                        /* IE6-9 */
+                    }
+
+                    &.orange-tab {
+                        background: #fe7c2a;
+
+                        /* Old browsers */
+                        background: -moz-linear-gradient(top, #6e340f 0%, #fe7c2a 100%);
+
+                        /* FF3.6-15 */
+                        background: -webkit-linear-gradient(top, #6e340f 0%, #fe7c2a 100%);
+
+                        /* Chrome10-25,Safari5.1-6 */
+                        background: linear-gradient(to bottom, #6e340f 0%, #fe7c2a 100%);
+
+                        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6e340f', endColorstr='#fe7c2a',GradientType=0 );
+
+                        /* IE6-9 */
+                    }
+
+                    &.blue-tab {
+                        background: #3a5079;
+
+                        /* Old browsers */
+                        background: -moz-linear-gradient(top, #3a5079 0%, #2c3b55 100%);
+
+                        /* FF3.6-15 */
+                        background: -webkit-linear-gradient(top, #3a5079 0%, #2c3b55 100%);
+
+                        /* Chrome10-25,Safari5.1-6 */
+                        background: linear-gradient(to bottom, #3a5079 0%, #2c3b55 100%);
+
+                        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a5079', endColorstr='#2c3b55',GradientType=0 );
+
+                        /* IE6-9 */
+                    }
+
+                    &.green-tab {
+                        background: #215219;
+
+                        /* Old browsers */
+                        background: -moz-linear-gradient(top, #215219 0%, #406c39 100%);
+
+                        /* FF3.6-15 */
+                        background: -webkit-linear-gradient(top, #215219 0%, #406c39 100%);
+
+                        /* Chrome10-25,Safari5.1-6 */
+                        background: linear-gradient(to bottom, #215219 0%, #406c39 100%);
+
+                        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#215219', endColorstr='#406c39',GradientType=0 );
+
+                        /* IE6-9 */
+                    }
+
+                    &:hover {
+                        border: none;
+                    }
+
+                    + span {
+                        position: absolute;
+                        top: 35px;
+                        left: 0;
+                        text-align: center;
+                        display: none;
+                        width: 100%;
+                        color: #929292;
+                        font-size: 15px;
+                        line-height: 1.2;
+                    }
+                }
+
+                > a.current {
+                    + span {
+                        display: block;
+                    }
+
+                    &.yellow-tab {
+                        background: #f5b40c;
+                    }
+
+                    &.black-tab {
+                        background: #000;
+                    }
+
+                    &.orange-tab {
+                        background: #fe7c2a;
+                    }
+
+                    &.blue-tab {
+                        background: #3a5079;
+                    }
+
+                    &.green-tab {
+                        background: #215219;
+                    }
+                }
+
+                > a.current, 
+                > a.current:focus,
+                > a.current:hover {
+                    color: #929292;
+                    cursor: default;
+                    border: none;
+                    outline: none;
+                    height: 45px;
+                    //bottom: 0;
+                    left: 5px;
+                    z-index: 1;
+
+                    @include ie9-plus {
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.colorize-scooter {
+    text-align: center;
+    margin: 60px 0 100px;
+}
+
+.tabs-animated {
+    overflow: hidden;
+}
+
+/* Color Vairent */
+.colorWrap {
+    float: none;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.colorWrap p {
+    font-size: 16px;
+}
+
+.colorOption {
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    /* float: left; */
+}
+
+.colorOption ul {
+    display: inline-block;
+}
+
+.colorOption li a {
+    text-decoration: none;
+}
+
+.colorOption li a em {
+    background-color: #eb8b00;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    border: 3px solid #fff;
+    margin-bottom: 10px !important; 
+}
+
+.colorOption li a em:before {
+    background: none;
+    border: 3px solid transparent;
+    content: "";
+    display: block;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    pointer-events: none;
+}
+
+.colorOption li a.current em:before {
+    border: 3px solid #cccccc;
+}
+
+.colorOption li a span {
+    font-style: normal;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: sans-serif;
+    text-align: center;
+    color: #000;
+}
+.color-variant ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* .color-variant .carImgList {
+    width: 85%;
+    margin: 0px auto 0 auto;
+    height: 420px;
+} */
+
+.color-variant .colorSlider .allCars {
+    /* float: left; */
+    margin: 60px auto 0 auto;
+    text-align: center;
+    height: 450px;
+    width: 520px;
+    @include breakpoint(xs) {
+        width: 300px;
+        height: 300px; 
+    }
+}
+#discs .allCars li img.updateWidth {
+    width: 520px !important;
+    @include breakpoint(xs) {
+        width: 300px !important; 
+    }  
+}
+.color-variant .colorSlider .allCars ul{ 
+    width: 100%;       
+    position: relative;  
+}
+.color-variant .colorSlider p {
+    padding: 0 20px;
+}
+
+.color-variant .allCars li {
+    position: absolute;
+    visibility: hidden;
+    z-index: 0; 
+    width: 100%;   
+    /* width: 517px; */
+}
+
+.color-variant .allCars li.prevActive {
+    visibility: visible;
+    z-index: 1;
+}
+
+.color-variant .allCars li.active {
+    visibility: visible;
+    z-index: 2;
+}
+.color-variant img.autoWidth { 
+    max-width: none; 
+} 
+

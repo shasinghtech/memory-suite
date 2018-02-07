@@ -1,0 +1,41 @@
+.tvs-racing-video {
+  margin: 100px 0;
+  @include breakpoint(xs) {
+    margin: 50px 0;
+  }
+}
+
+.tvs-racing-more{
+  background: url("../img/tvs-racing-bg.jpg") no-repeat center top;
+  padding: 200px 0 350px;
+  @include breakpoint(xs) {
+    padding: 0 0 420px;
+    background-size: 200%;
+    background-position: right bottom;
+  }
+  .racing-content{
+    h1{
+      font-size: 36px;
+      line-height: 40px;
+      font-family: $dinBoldItalic;
+      margin: 0 0 40px 0;
+      color: $yellowColor;
+      @include breakpoint(xs) {
+        font-size: 26px;
+        line-height: 30px;
+        margin: 0 0 25px 0;
+      }
+    }
+    p{
+      font-size: 18px;
+      line-height: 25px;
+      font-family: $dinNormal;
+      margin: 0 0 45px 0;
+      color: #fff;
+      @include breakpoint(xs) {
+        font-size: 14px;
+        margin: 0 0 25px 0;
+      }
+    }
+  }
+}
